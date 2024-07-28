@@ -1,7 +1,8 @@
 # e-commerce purchase item recommendation
 a simple e-commerce recommendation system powered with AI (Neural Collaborative Filtering (NCF))
 
-Before you start, please download and unzip the dataset from Kaggle below:
+Before you start, please download the .ipynb, dataset from Kaggle and unzip the file from below link (P.S.: please keep all files in the same directory):
+
 https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store/versions/1/data
 
 This is a dataset of purchase from April 2020 to November 2020 from a large home appliances and electronics online store.
@@ -9,7 +10,14 @@ This is a dataset of purchase from April 2020 to November 2020 from a large home
 Each row in the file represents an event. All events are related to products and users. Each event is like many-to-many relation between products and users.
 
 # Prerequisite
-we are using the LibRecommender library in Python to train an NCF model for the purchase dataset on item recommendation. Please install Python>=3.9, LibRecommender, numpy, pandas, scikit-learn, tensorflow==2.14.0, torch libraries
+we are using the LibRecommender library in Python to train an NCF model for the purchase dataset on item recommendation. Please install:
+- Python>=3.9
+- LibRecommender==1.5.1
+- numpy==1.26.4
+- pandas==2.2.2
+- scikit-learn==1.5.1
+- tensorflow==2.14.0
+- torch==2.4.0
 
 # Data cleaning
 The dataset may contain duplicate record of purchase and with none value. We need to drop duplicates and NaN values before training.
